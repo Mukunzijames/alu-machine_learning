@@ -40,7 +40,7 @@ class Poisson:
         return res
 
     def cdf(self, k):
-        """Cumulative Distribution Function (CDF) of 
+        """Cumulative Distribution Function (CDF) of
         the Poisson distribution.
         """
         k = int(k)
