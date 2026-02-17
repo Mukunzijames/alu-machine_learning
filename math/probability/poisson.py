@@ -23,7 +23,7 @@ class Poisson:
                 self.lambtha = float(lambtha)
 
     def pmf(self, k):
-        """Probability Mass Function (PMF) of 
+        """Probability Mass Function (PMF) of
         the Poisson distribution.
         """
         k = int(k)
