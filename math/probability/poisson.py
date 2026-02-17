@@ -10,10 +10,10 @@ class Poisson:
     def __init__(self, data=None, lambtha=1.):
         """Initialize the Poisson distribution."""
         if data is not None:
-            if len(data) <= 2:
-                raise ValueError("data must contain multiple values")
-            elif type(data) is not list:
+            if type(data) is not list:
                 raise TypeError("data must be a list")
+            elif len(data) < 2:
+                raise ValueError("data must contain multiple values")
             else:
                 self.lambtha = float(sum(data) / len(data))
         else:

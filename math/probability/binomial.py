@@ -17,9 +17,9 @@ class Binomial():
                 self.p = float(p)
         else:
             if type(data) != list:
-                TypeError("data must be a list")
+                raise TypeError("data must be a list")
             elif len(data) < 2:
-                ValueError("data must contain multiple values")
+                raise ValueError("data must contain multiple values")
             else:
                 mean = sum(data) / len(data)  # mean = n*p
                 var = sum([(data[x] - mean) ** 2 for x in range(len(data))]
